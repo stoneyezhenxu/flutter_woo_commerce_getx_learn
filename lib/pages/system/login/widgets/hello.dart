@@ -16,7 +16,12 @@ class HelloWidget extends GetView<LoginController> {
             onPressed: () {
               controller.state.add();
             },
-            child: const Text('Add one'))
+            child: const Text('Add one')),
+        ElevatedButton(
+            onPressed: () {
+              Get.toNamed('/splash');
+            },
+            child: const Text('jump to splash page'))
       ]),
     );
   }

@@ -1,5 +1,5 @@
-import 'package:flutter_woo_commerce_getx_learn/pages/system/login/bindings.dart';
-import 'package:flutter_woo_commerce_getx_learn/pages/system/login/view.dart';
+import 'package:flutter_woo_commerce_getx_learn/pages/system/login/index.dart';
+import 'package:flutter_woo_commerce_getx_learn/pages/system/splash/index.dart';
 import 'package:get/get.dart';
 import 'index.dart';
 
@@ -10,6 +10,10 @@ class RoutePages {
       name: RouteNames.login,
       page: () => const LoginPage(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: RouteNames.splash,
+      page: () => const SplashPage(),
     ),
   ];
 }
