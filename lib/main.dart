@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_woo_commerce_getx_learn/common/routers/index.dart';
+import 'global.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
+  await Global.init();
   runApp(const MyApp());
 }
 
