@@ -11,6 +11,10 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   Widget _buildView() {
     return Column(children: [
       ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesText),
+        title: const Text("Text 文本"),
+      ),
+      ListTile(
         onTap: controller.onThemeSelected,
         title: Text("主题 : ${ConfigService.to.isDarkModel ? "Dark" : "Light"}"),
       ),
