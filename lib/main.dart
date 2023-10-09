@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_woo_commerce_getx_learn/common/routers/index.dart';
 import 'common/index.dart';
 import 'global.dart';
 import 'package:get/get.dart';
@@ -17,8 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
-
-      initialRoute: RouteNames.stylesStylesIndex,
+      initialRoute: RouteNames.systemSplash,
+      // initialRoute: RouteNames.stylesStylesIndex,
       getPages: RoutePages.list,
       navigatorObservers: [RoutePages.observer],
 
