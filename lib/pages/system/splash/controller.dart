@@ -1,4 +1,5 @@
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:flutter_woo_commerce_getx_learn/common/index.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
@@ -6,6 +7,15 @@ class SplashController extends GetxController {
 
   _initData() {
     update(["splash"]);
+  }
+
+  _jumpToPage() {
+    // 样式配置
+    if (ConfigService.to.isAlreadyOpen) {
+      Get.offAllNamed(RouteNames.systemWelcome);
+    } else {
+      Get.offAllNamed(RouteNames.systemLogin);
+    }
   }
 
   void onTap() {}
@@ -23,6 +33,7 @@ class SplashController extends GetxController {
     FlutterNativeSplash.remove();
     _initData();
     // Get.to(const LoginQuickPage());
+    _jumpToPage(); // 跳转界面
   }
 
   // @override

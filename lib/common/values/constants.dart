@@ -10,4 +10,6 @@ class Constants {
 
   //主题
   static const storageThemeCode = 'theme_code';
+
+  static const storageAlreadyOpen = 'already_open'; // 首次打开
 }
