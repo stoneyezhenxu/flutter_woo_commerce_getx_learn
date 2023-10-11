@@ -10,6 +10,11 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   // 主视图
   Widget _buildView() {
     return Column(children: [
+      // form 表单
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesTextForm),
+        title: const TextWidget.body1("form 表单"),
+      ),
       ListTile(
         onTap: () => Get.toNamed(RouteNames.stylesInputs),
         title: const TextWidget.body1("Input 输入框"),
