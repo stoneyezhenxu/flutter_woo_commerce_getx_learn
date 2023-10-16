@@ -10,6 +10,9 @@ class Global {
     WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
     FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
+    // 工具类
+    Loading();
+
     await Storage().init();
 
     await Future.wait([
